@@ -66,7 +66,6 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    bcrypt (3.1.18)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -77,8 +76,6 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
-    faker (2.21.0)
-      i18n (>= 1.8.11, < 2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -86,9 +83,6 @@ GEM
     io-console (0.5.11)
     irb (1.4.1)
       reline (>= 0.3.0)
-    jwt (2.4.1)
-    jwt_sessions (2.7.2)
-      jwt (>= 2.2.3, < 3)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -151,7 +145,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    redis (4.7.1)
     reline (0.3.1)
       io-console (~> 0.5)
     sqlite3 (1.4.4)
@@ -171,15 +164,11 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)
   bootsnap
   debug
-  faker
-  jwt_sessions (~> 2.3)
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.3)
-  redis (~> 4.0)
   sqlite3 (~> 1.4)
   tzinfo-data
 

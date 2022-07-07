@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="list-group">
+    <a class="list-group-item list-group-item-action active">
+      <h1 class="headline">Proposal List</h1>
+    </a>
+    <span class="list-group-item list-group-item-action" *ngFor="let proposal of proposals">
+      <a class="proposal-link" routerLink="/proposal/{{ proposal.id }}">
+        <h5 class="list-group=item-heading">{{ proposal.customer }}</h5>
+        <p class="list-group-item-text">
+          {{proposal.id}} - {{ proposal.customer }}: {{ proposal.portfolio_url }}
+          <!-- {{ proposal.hourly_rate * proposal.estimated_hours | currency:'USD':true:',0' }} ERA PRA SER, MAS NÃO SEI COMO CALCULAR AS VARIAVEIS NA VERSÃO DESSE ANGULAR-->
+        </p>
+      </a>
+    </span>
+  </div>
+</div>
