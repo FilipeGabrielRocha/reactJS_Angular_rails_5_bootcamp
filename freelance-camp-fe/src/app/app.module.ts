@@ -13,16 +13,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HttpModule} from '@angular/http';
 
 // PROVIDERS
 import { DocumentService } from './documents/document.service';
+import { ProposalService } from './proposal/proposal.service';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpModule
   ],
   declarations: [
     AppComponent,
@@ -36,7 +39,8 @@ import { DocumentService } from './documents/document.service';
     AppComponent
   ],
   providers: [
-    DocumentService
+    DocumentService,
+    ProposalService
   ],
 })
 export class AppModule { }

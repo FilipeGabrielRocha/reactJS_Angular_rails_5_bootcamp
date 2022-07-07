@@ -4,7 +4,7 @@
       <h1 class="headline">Proposal List</h1>
     </a>
     <span class="list-group-item list-group-item-action" *ngFor="let proposal of proposals">
-      <a class="proposal-link" routerLink="/proposal/{{ proposal.id }}">
+      <a class="proposal-link" (click)="goToShow(proposal)">
         <h5 class="list-group=item-heading">{{ proposal.customer }}</h5>
         <p class="list-group-item-text">
           {{proposal.id}} - {{ proposal.customer }}: {{ proposal.portfolio_url }}
